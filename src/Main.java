@@ -6,13 +6,15 @@ class Main
         int totalNumber=1000000;
         int totalThread=10;
         int printNumber=totalNumber/totalThread;
+        PrintNumbers[] arr=new PrintNumbers[totalThread];
         AtomicInteger obj=new AtomicInteger();
         for(int i=0;i<totalThread;i++)
         {
             int start=i*printNumber+1;
             int end=(i+1)*printNumber;
             PrintNumbers t1=new PrintNumbers(start,end,obj,"Thread - "+(i+1));
-            t1.start();
+            arr[i]=t1;
+            arr[i].start();
         }
     }
 }
