@@ -6,6 +6,8 @@ public class StudentData
 {
     public static void main(String[] args)
     {
+        String location ="none";
+        System.out.println("Name = "+location);
         String value="student name is abcd and his mark is English is 56 and his mark in Tamil is 66 and his mark in maths is 77 and his mark in science is 58 and his marks in social is 50 and the next student name is efgh and his mark is English is 58 and his mark in Tamil is 45 and his mark in maths is 90 and his mark in science is 70 and his marks in social is 67 and the next student name is ijkl and his mark is English is 56 and his mark in Tamil is 66 and his mark in maths is 77 and his mark in science is 58 and his marks in social is 94 and the next student name is lmno and his mark is English is 44 and his mark in Tamil is 66 and his mark in maths is 77 and his mark in science is 72 and his marks in social is 62 and the next student name is pqrs and his mark is English is 56 and his mark in Tamil is 74 and his mark in maths is 90 and his mark in science is 58 and his marks in social is 50 and the next student name is tuv and his mark is English is 84 and his mark in Tamil is 66 and his mark in maths is 78 and his mark in science is 98 and his marks in social is 50 and the next student name is wxyz and his mark is English is 71 and his mark in Tamil is 66 and his mark in maths is 81 and his mark in science is 63 and his marks in social is 59 and the next student name is ijkl and his mark is English is 56 and his mark in Tamil is 66 and his mark in maths is 77 and his mark in science is 58 and his marks in social is 50";
         String[] studentData=value.split("and the next");
         Students obj=new Students();
